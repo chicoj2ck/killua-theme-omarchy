@@ -1,0 +1,33 @@
+# ==================================================
+# Killua Classic
+# Omarchy Theme
+# Version: 1.0.0
+# ==================================================
+
+accent = "#66B3FF"
+
+background = "#090C10"
+foreground = "#EDF4FF"
+
+cursor = "#EDF4FF"
+
+selection_background = "#66B3FF"
+selection_foreground = "#090C10"
+
+color0  = "#090C10"
+color1  = "#FF6B88"
+color2  = "#66B3FF"
+color3  = "#7EEFFF"
+color4  = "#66B3FF"
+color5  = "#A9D4FF"
+color6  = "#7EEFFF"
+color7  = "#EDF4FF"
+
+color8  = "#202734"
+color9  = "#FF8FA7"
+color10 = "#8CC8FF"
+color11 = "#A8F6FF"
+color12 = "#9FD1FF"
+color13 = "#CBE4FF"
+color14 = "#B6FAFF"
+color15 = "#FFFFFF"

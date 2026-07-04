@@ -1,0 +1,19 @@
+{
+  "editor.fontFamily": "Maple Mono NF",
+  "editor.fontSize": 15,
+  "editor.fontWeight": "500",
+  "editor.lineHeight": 28,
+
+  "editor.minimap.enabled": false,
+  "editor.renderWhitespace": "selection",
+  "editor.cursorBlinking": "smooth",
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.smoothScrolling": true,
+
+  "workbench.tree.indent": 16,
+  "window.commandCenter": false,
+  "workbench.activityBar.location": "top",
+
+  "editor.bracketPairColorization.enabled": true,
+  "editor.guides.bracketPairs": "active"
+}
