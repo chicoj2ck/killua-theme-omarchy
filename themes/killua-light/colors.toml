@@ -1,0 +1,34 @@
+# ==================================================
+# Killua Light
+# Omarchy Theme
+# Version: 1.0.0
+# Inspired by Killua Zoldyck — Godspeed
+# ==================================================
+# Minimalism. Electricity. Ice. Speed. Light.
+# Palette: winter sky, electric blue, frost ice, dark ink
+
+accent = "#4FC3FF"
+background = "#F0F6FF"
+foreground = "#1A1E28"
+cursor = "#1A1E28"
+
+selection_background = "#4FC3FF"
+selection_foreground = "#F0F6FF"
+
+color0  = "#D0D8E4"
+color1  = "#D63355"
+color2  = "#2BAF98"
+color3  = "#48A0C8"
+color4  = "#4FC3FF"
+color5  = "#6A94CC"
+color6  = "#40ADC8"
+color7  = "#FFFFFF"
+
+color8  = "#B0C0D4"
+color9  = "#E85A72"
+color10 = "#48C8B0"
+color11 = "#70C0E8"
+color12 = "#70C0F0"
+color13 = "#88B0D8"
+color14 = "#68D0E8"
+color15 = "#FFFFFF"

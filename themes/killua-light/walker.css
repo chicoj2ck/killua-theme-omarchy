@@ -1,0 +1,101 @@
+@define-color selected-text #FFFFFF;
+@define-color text #1A1E28;
+@define-color base rgba(240, 246, 255, 0.96);
+@define-color border rgba(79, 195, 255, 0.25);
+@define-color foreground #1A1E28;
+@define-color background rgba(240, 246, 255, 0.98);
+@define-color selection #4FC3FF;
+@define-color selection-text #FFFFFF;
+@define-color highlight rgba(79, 195, 255, 0.12);
+@define-color text-secondary #6B7D94;
+
+#window {
+  background: @background;
+  border: 1px solid @border;
+  border-radius: 10px;
+}
+
+#input {
+  background: rgba(200, 212, 228, 0.4);
+  color: @foreground;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  padding: 8px 14px;
+  margin: 8px;
+  font-size: 14px;
+}
+
+#input:focus {
+  border-color: @border;
+  background: rgba(200, 212, 228, 0.5);
+}
+
+#input:placeholder {
+  color: @text-secondary;
+}
+
+#scroll {
+  margin: 0 4px 4px;
+}
+
+#entry {
+  border-radius: 6px;
+  margin: 2px 4px;
+  padding: 8px 12px;
+  transition: all 0.1s ease;
+}
+
+#entry:selected {
+  background: @selection;
+  color: @selection-text;
+  font-weight: 500;
+}
+
+#entry:hover {
+  background: @highlight;
+}
+
+#entry:selected #text {
+  color: @selection-text;
+}
+
+#entry:selected #name {
+  color: @selection-text;
+}
+
+#entry:selected #description {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+#text {
+  color: @foreground;
+}
+
+#name {
+  color: @foreground;
+  font-size: 13px;
+}
+
+#description {
+  color: @text-secondary;
+  font-size: 11px;
+}
+
+#icon {
+  color: @foreground;
+  margin-right: 10px;
+}
+
+#icon:selected {
+  color: @selection-text;
+}
+
+#unselected {
+  color: @text-secondary;
+}
+
+#plugin {
+  color: @text-secondary;
+  font-size: 10px;
+  padding: 4px 8px;
+}

@@ -1,0 +1,166 @@
+@define-color foreground #1A1E28;
+@define-color background rgba(240, 246, 255, 0.92);
+@define-color surface rgba(200, 212, 228, 0.4);
+@define-color accent #4FC3FF;
+@define-color accent-dim rgba(79, 195, 255, 0.25);
+@define-color border rgba(79, 195, 255, 0.2);
+@define-color border-active #4FC3FF;
+@define-color text-secondary #6B7D94;
+@define-color warning #E69A2E;
+@define-color error #D63355;
+@define-color success #4FC3FF;
+
+* {
+  border: none;
+  border-radius: 0;
+  font-family: "JetBrainsMono Nerd Font";
+  font-size: 13px;
+  min-height: 0;
+}
+
+window#waybar {
+  background: @background;
+  border-bottom: 1px solid @border;
+  transition: background 0.2s ease;
+}
+
+window#waybar.empty {
+  background: transparent;
+  border-bottom: 1px solid transparent;
+}
+
+#workspaces {
+  background: transparent;
+  margin: 4px 6px;
+  padding: 0;
+}
+
+#workspaces button {
+  padding: 0 8px;
+  margin: 0 2px;
+  background: transparent;
+  color: @text-secondary;
+  border-radius: 4px;
+  font-size: 11px;
+  transition: all 0.15s ease;
+}
+
+#workspaces button:hover {
+  background: @accent-dim;
+  color: @foreground;
+  text-shadow: 0 0 8px rgba(79, 195, 255, 0.3);
+}
+
+#workspaces button.active {
+  background: @accent;
+  color: #FFFFFF;
+  font-weight: bold;
+  text-shadow: 0 0 12px rgba(79, 195, 255, 0.5);
+  box-shadow: 0 0 6px rgba(79, 195, 255, 0.25);
+}
+
+#workspaces button.urgent {
+  background: @error;
+  color: #FFFFFF;
+}
+
+#clock {
+  background: transparent;
+  color: @foreground;
+  padding: 0 14px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+#clock:hover {
+  color: @accent;
+  text-shadow: 0 0 8px rgba(79, 195, 255, 0.25);
+}
+
+#battery,
+#pulseaudio,
+#network,
+#bluetooth,
+#power-profiles-daemon {
+  background: transparent;
+  color: @foreground;
+  padding: 0 10px;
+  margin: 0 2px;
+  border-radius: 4px;
+  transition: all 0.15s ease;
+}
+
+#battery:hover,
+#pulseaudio:hover,
+#network:hover,
+#bluetooth:hover {
+  background: @surface;
+  color: @accent;
+}
+
+#battery.charging {
+  color: @accent;
+}
+
+#battery.warning:not(.charging) {
+  color: @warning;
+}
+
+#battery.critical:not(.charging) {
+  color: @error;
+}
+
+#pulseaudio.muted {
+  color: @text-secondary;
+}
+
+#network.disconnected {
+  color: @error;
+}
+
+#tray {
+  background: transparent;
+  padding: 0 6px;
+  margin: 4px 0;
+  border-left: 1px solid @border;
+}
+
+#tray > .passive {
+  -gtk-icon-effect: dim;
+}
+
+#tray > .needs-attention {
+  -gtk-icon-effect: highlight;
+  background: @accent-dim;
+}
+
+#custom-power {
+  background: transparent;
+  color: @text-secondary;
+  padding: 0 12px;
+  margin: 4px 4px;
+  border-radius: 4px;
+  font-size: 14px;
+  transition: all 0.15s ease;
+}
+
+#custom-power:hover {
+  background: @error;
+  color: #FFFFFF;
+}
+
+#custom-separator {
+  color: @border;
+  font-size: 10px;
+  padding: 0 2px;
+}
+
+tooltip {
+  background: rgba(240, 246, 255, 0.97);
+  border: 1px solid @border;
+  border-radius: 6px;
+}
+
+tooltip label {
+  color: @foreground;
+}
